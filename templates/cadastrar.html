@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+
+			<div class="cadastro" >
+			</div>
+				<br/>
+				<br/>
+					<div id = "borda" align = "center">
+					<h2> CADASTRA-SE-SE <h2>
+					<form name = "form" method = "post" action = "login.html" onsubmit=" return validar();">
+						{{formulario.username.label}}
+						{{formulario.username}}<bt/>
+						{{formulario.datadenascimento.label}}
+						{{formulario.datanascimento}}<br/>
+						{{formulario.email.label}}
+						{{formulario.email}}<br/>
+						{{formulario.repitaemail.label}}
+						{{formulario.repitaemail}}<br/>
+						{{formulario.senha.label}}
+						{{formulario.senha}}<br/>
+						{{formulario.repitasenha.label}}
+						{{formulario.repitasenha}}<br/>
+						
+							  <p> 
+								<input type="submit" name="submit" value="Cadastrar" onclick="cadastrar"> 
+							  </p>
+							   
+							  <p class="link">  
+								Já tem conta?
+								<a href="login.html"> Ir para Login </a>
+							  </p>
+							</form>
+						  </div>
+						  <br/>
+
+						  <br/>
+						  <div id="borda4" aligin="center">
+							  <p align="center"> Já tem conta? <a href="/login"> Faça seu Login </a> </p>
+
+			</br></br></br>
+			{% endblock conteudo %}
+			 
+		 
+
