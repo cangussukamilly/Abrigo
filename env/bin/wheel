@@ -1,5 +1,4 @@
 #!/home/kamilly/Documentos/site/env/bin/python3
-
 # -*- coding: utf-8 -*-
 import re
 import sys
