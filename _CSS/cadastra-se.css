@@ -236,3 +236,21 @@ input[type="submit"]:hover{
     transform: translateX(-20px);
   }
 }
+
+#rodape {
+	color: #FFFFFF;
+	background-color:#A52A2A;
+
+    text-align: LEFT;
+	
+	-webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+}
+
+#nav-footer {
+	color: #FFFFFF;
+	background-color:#A52A2A;
+
+    text-align: center;	
+}
