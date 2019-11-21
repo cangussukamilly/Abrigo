@@ -12,7 +12,7 @@ class CadastraUsuarioForm(FlaskForm):
         'Data de nascimento:',
         validators=[DataRequired(), Length(min=2, max=80)]
     )
-    email = StringField (
+    email = StringField(
         'E-mail:',
         validators=[DataRequired(), Email()]
     )
@@ -42,14 +42,14 @@ class LoginUsuarioForm(FlaskForm):
     botao = SubmitField('Fazer Login')
 
 class AdocaoForm(FlaskForm):
-     username = StringField(
+    username = StringField(
         'Nome:',
         validators=[DataRequired(), Length(min=2, max=80)]
     )
-    email = StringField (
+    email = StringField(
         'E-mail:',
         validators=[DataRequired(), Email()]
-    )
+        )
     datadenascimento = StringField(
         'Data de nascimento:',
         validators=[DataRequired(), Length(min=2, max=80)]
