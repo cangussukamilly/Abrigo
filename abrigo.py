@@ -1,6 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
-from forms import CadastraUsuarioForm, LoginUsuarioForm 
+from forms import CadastraUsuarioForm, LoginUsuarioForm, AdocaoForm
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///abrigo.db'
@@ -32,24 +32,18 @@ def index():
 def login():
     form=LoginUsuarioForm()
     return render_template('login.html', formulario=form)
+
 @app.route('/cadastrar', methods=['GET', 'Post'])
 def cadastro():
 
     form= CadastraUsuarioForm()
 
     return render_template('cadastrar.html', formulario=form)
-@app.route('/sobre')
-def lute():
-    return render_template('sobre.html')
-@app.route('/trabalhoabrigodecaes')
-def acompanhamento():
-    form= DeixeSeuRelatorioForm()
+@app.route('/adocoes')
+def adocoes():
+    form = AdocaoForm()
+    return render_template('adocoes.html', formulario=form)
 
-    return render_template('trabalhoabrigodecaes.html', formulario=form)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run (debug=True)
-
-
-
-
