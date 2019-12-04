@@ -46,15 +46,41 @@ class AdocaoForm(FlaskForm):
         'Nome:',
         validators=[DataRequired(), Length(min=2, max=80)]
     )
+    bairro = StringField(
+        'Bairro:',
+        validators=[DataRequired(), Length(min=2, max=80)]
+    )
+
+    cidade = StringField(
+        'Cidade:',
+        validators=[DataRequired(), Length(min=2, max=80)]
+    )
+    estado = StringField(
+        'Estado:',
+        validators=[DataRequired(), Length(min=2, max=80)]
+    )
+
     email = StringField(
         'E-mail:',
         validators=[DataRequired(), Email()]
         )
-    datadenascimento = StringField(
-        'Data de nascimento:',
+
+    confirmeseuemail= StringField(
+        'Confirme seu E-mail:',
         validators=[DataRequired(), Length(min=2, max=80)]
     )
-    escrevaRelato = StringField(
-        'Data de nascimento:',
+
+    ddd = StringField(
+        'DDD:',
+        validators=[DataRequired(), Length(min=2, max=80)]
+    )
+    telefone = StringField(
+        'Telefone:',
+        validators=[DataRequired(), Length(min=2, max=80)]
+    )
+    porquevocequeradotarumcao = StringField(
+        'Porque você quer adotar um cachorro?',
         validators=[Length(min=2, max=1000)]
     )
+
+    botao = SubmitField('Enviar')
