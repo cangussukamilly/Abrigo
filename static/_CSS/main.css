@@ -1,0 +1,93 @@
+
+#um{
+float:left;
+}
+#qwe{
+	width:260px;
+height:150px;
+	
+}
+
+
+#menu{
+	 background-color:#FFFFE0;
+}
+
+#menu ul{
+	padding: 0px;
+    margin: 0px;
+    background-color:#FFFFE0;
+    list-style: nome;
+    font-size: 15px;
+    widht:1000%;
+    hight: 46%;	
+	
+}
+
+#menu ul li{
+	display: inline;
+	
+}
+
+#menu ul li a {
+	padding: 4px 15px;
+    display: inline-block;
+    
+    /* visual do link */
+    background-color:#FFFFE0 ;
+    color:#333;
+    text-decoration:nome;
+    border-bottom: 3px solid #EDEDED;	
+	
+}
+
+#menu ul li a: houver {
+	background-color: #FFFFE0;
+	color: #6D6D6D;
+	border-bottom: 3px solid #4c4c4c
+	
+}
+#adotar {
+	color:#000000;
+	background-color:#FFE4B5;
+
+    text-align: center;	
+	
+}
+#dois {
+	color:;
+	background-color:;
+}
+
+#cachorro{
+	    color:#030303;
+		background-color:#FFE4B5;
+   
+
+}
+h5 {
+  border: 5px solid black;
+}
+#rodape {
+	color: #FFFFFF;
+	background-color:#A52A2A;
+
+    text-align: LEFT;
+	
+	-webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+}
+
+#nav-footer {
+	color: #FFFFFF;
+	background-color:#A52A2A;
+
+    text-align: center;	
+}
+
+
+
+
+
+
