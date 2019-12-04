@@ -7,13 +7,14 @@
 			</div>
 				<br/>
 				<br/>
-					<div id = "borda" align = "center">
-					<h2> CADASTRA-SE-SE <h2>
-					<form name = "form" method = "post" action = "login.html" onsubmit=" return validar();">
+					<div id = "borda" style="margin: auto; width: 65%; border: 1px solid #000;">
+					<h2 align= "center"> CADASTRA-SE<h2>
+						
+					<form name = "form"  method = "post" action = "login.html" onsubmit=" return validar();" aligin="center">
 						{{formulario.username.label}}
 						{{formulario.username}}<bt/>
 						{{formulario.datadenascimento.label}}
-						{{formulario.datanascimento}}<br/>
+						{{formulario.datadenascimento}}<br/>
 						{{formulario.email.label}}
 						{{formulario.email}}<br/>
 						{{formulario.repitaemail.label}}
@@ -27,11 +28,9 @@
 								<input type="submit" name="submit" value="Cadastrar" onclick="cadastrar"> 
 							  </p>
 							   
-							  <p class="link">  
-								Já tem conta?
-								<a href="login.html"> Ir para Login </a>
-							  </p>
+							 
 							</form>
+							
 						  </div>
 						  <br/>
 

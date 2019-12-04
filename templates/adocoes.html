@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+<div class="Adoções" >
+</div>
+    <br/>
+    <br/>
+        <div id = "borda4" align = "center" style="margin: auto; width: 30%; border: 1px solid #000;">
+        <h2> ADOTE UM CACHORRO </h2></br>
+            <form>
+
+                {{formulario.username.label}}            
+                {{formulario.username}}
+                </br></br>
+                {{formulario.bairro.label}}
+                {{formulario.bairro}}
+                </br></br>
+                {{formulario.cidade.label}}
+                {{formulario.cidade}}
+                </br></br>
+                {{formulario.estado.label}}
+                {{formulario.estado}}
+                </br></br>
+                {{formulario.email.label}}
+                {{formulario.email}}
+                </br></br>
+                {{formulario.confirmeseuemail.label}}
+                {{formulario.confirmeseuemail}}
+                </br></br>
+                {{formulario.ddd.label}}
+                {{formulario.ddd}}
+                </br></br>
+                {{formulario.telefone.label}}
+                {{formulario.telefone}}
+                </br></br>
+                {{formulario.porquevocequeradotarumcao.label}}</br>
+                {{formulario.porquevocequeradotarumcao}}
+                </br></br>
+
+
+                <p> 
+                    <input type="submit" name="submit" value="enviar" onclick="Logar"> 
+                  </p>
+                   
+                
+              </form>
+                   
+                  
+</br></br></br>
+{% endblock conteudo %}
