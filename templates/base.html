@@ -17,16 +17,16 @@
 			<div id="dois"> 
 			
 			
-					<div id="cao" align="left">
+					<div id="cao" align="right">
 						 
-						 <nav class="navbar navbar-light" style="background-color:#FFDAB9">
+						 <nav class="navbar navbar-light" style="background-color:#FFDAB9; color=#0000">
 						  <!-- Navbar content -->
-							<ul class="nav justify-content-end">
+							<ul class="nav justify-content-end" >
 							</br>
-								<li class="nav-item"> <a class="nav-link" href="/home"> HOME </a></li>
-								<li class="nav-item"> <a class="nav-link" href="/adocoes"> ADOÇÃO </a></li>
-								<li class="nav-item"> <a class="nav-link" href="/login"> LOGIN </a></li>
-								<li class="nav-item"> <a class="nav-link" href="/cadastrar"> CADASTRAR </a></li><p><p><p>
+								<li class="nav-item" > <a class="nav-link" href="/home"> HOME </a></li>
+								<li class="nav-item" > <a class="nav-link" href="/adocoes"> ADOÇÃO </a></li>
+								<li class="nav-item" > <a class="nav-link" href="/login"> LOGIN </a></li>
+								<li class="nav-item" > <a class="nav-link" href="/cadastrar"> CADASTRAR </a></li><p><p><p>
 							
 							
 							</ul>
@@ -44,8 +44,18 @@
 	 {% block cadastrar %}
 	 {% endblock cadastrar %}
 
-			<div id=" rodape ">
-				<footer><br/>
+	 <div id="rodape">
+			<footer><br/>
+				<div align="center">
+					<img src="{{url_for('static', filename='imagens/redesocial.png')}}">
+					<br/><br/>
+				</div>
+					<div align="center">
+						Quer fazer parte desse movimento?Não tem uma conta ainda?<a href="{{url_for('static', filename='/cadastrar')}}">Cadastre-se</a> ou <a href="{{url_for('static', filename='/login')}}">Entre</a>
+					</div>
+						<h6 align="center">©2019-2019</h>
+			</footer>
+		</div>
 		
 						
 	</body>
