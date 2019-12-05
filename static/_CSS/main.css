@@ -35,7 +35,7 @@ height:150px;
     
     /* visual do link */
     background-color:#FFFFE0 ;
-    color:#333;
+    color:#0000;
     text-decoration:nome;
     border-bottom: 3px solid #EDEDED;	
 	
@@ -49,7 +49,7 @@ height:150px;
 }
 #adotar {
 	color:#000000;
-	background-color:#FFE4B5;
+	background-color:#E0FFFF;
 
     text-align: center;	
 	
@@ -59,9 +59,9 @@ height:150px;
 	background-color:;
 }
 
-#cachorro{
+#cao{
 	    color:#030303;
-		background-color:#FFE4B5;
+		background-color:#E0FFFF;
    
 
 }
@@ -69,8 +69,8 @@ h5 {
   border: 5px solid black;
 }
 #rodape {
-	color: #FFFFFF;
-	background-color:#A52A2A;
+	color: rgb(7, 7, 7);
+	background-color:#FFDAB9;
 
     text-align: LEFT;
 	
@@ -80,8 +80,8 @@ h5 {
 }
 
 #nav-footer {
-	color: #FFFFFF;
-	background-color:#A52A2A;
+	color: rgb(7, 7, 7);
+	background-color:#FFDAB9;
 
     text-align: center;	
 }
